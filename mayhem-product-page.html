@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backstage Records</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="cart.css">
+
+    <script src="website.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="website-title">
+        <h1>Backstage Records</h1>
+      </div>
+        <!-- The overlay -->
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="01-home-page.html">Home</a>
+          <a href="02-vinyl-page.html">Vinyl</a>
+          <a href="03-cd-page.html">CD</a>
+          <a href="04-merch-page.html">Merch</a>
+          <a href="faq-page.html">FAQ</a>
+          <a href="contact-us-page.html">Contact Us</a>
+        </div>
+
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span class="hamburger" onclick="openNav()"><img class="hamburger-icon" src="icons/hamburger.png"></span>
+
+      <div id="myCart" class="overlay2">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+
+        <div class="page">
+          <!--
+          <div class="card top">
+            <div>
+              <h2 style="margin:0 0 6px;">Demo</h2>
+              <div style="color:#555; font-size:14px;">Click the button to add an item at the bottom.</div>
+            </div>
+            <button type="button">Add Item</button>
+          </div>-->
+
+          <div class="card">
+            <h3 style="margin:0 0 10px;">Cart</h3>
+            <div id="items" class="items">
+              <div id="emptyState" class="empty">No items yet.</div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-content">
+          <a href="#">Checkout</a>
+        </div>
+
+      </div>
+
+      <div class="cart" onclick="openCart()">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+        <span id="cart-quantity" class="cart-quantity">0</span>
+      </div>
+    </div>
+    <hr>
+    <button class="back-button" onclick="goBack()">Go to previos page</button>
+    <div class="product">
+      <div class="audio-preview">
+        <p>Preview this album before you buy it!</p>
+        <div class="audio-player">
+          <audio controls>
+            <source src="music/abracadabra.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+      
+      <div class="product-container">
+        <div class="product-photo">
+          <img src="products/mayhem-vinyl.jpg">
+        </div>
+        <div class="product-info">
+          <div class="album">Mayhem</div>
+          <div class="artist">Lady Gaga</div>
+          <div class="genre">Pop</div>
+          <div class="product-price">$29.99</div>
+          <button id="addBtn">Add to Cart</button>
+        </div>
+      </div>  
+      <div class="product-description">
+        Mayhem is Lady Gaga's seventh studio album.
+      </div>
+    </div>  
+    
+
+    <hr>
+    <div class="footer">
+      <a href="faq-page.html">
+        <div class="faq-button">
+          FAQ
+        </div>
+      </a>
+
+      <a href="contact-us-page.html">
+        <div class="contact-us-button">
+          Contact Us
+        </div>
+      </a>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>

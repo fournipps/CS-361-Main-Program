@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Lady Gaga - Mayhem",
+    "price": 30,
+    "image": "pop-album-covers/mayhem-cover.png"
+  },
+  {
+    "id": 2,
+    "name": "PinkPantheress - Fancy That",
+    "price": 30,
+    "image": "pop-album-covers/pp-cover.png"
+  }
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backstage Records</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/faq.css">
+    <script src="website.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="website-title">
+        <h1>Backstage Records</h1>
+      </div>
+        <!-- The overlay -->
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="01-home-page.html">Home</a>
+          <a href="02-vinyl-page.html">Vinyl</a>
+          <a href="03-cd-page.html">CD</a>
+          <a href="04-merch-page.html">Merch</a>
+          <a href="faq-page.html">FAQ</a>
+          <a href="contact-us-page.html">Contact Us</a>
+        </div>
+
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span class="hamburger" onclick="openNav()"><img class="hamburger-icon" src="icons/hamburger.png"></span>
+    </div>
+    <hr>
+    <button class="back-button" onclick="goBack()">Go to previos page</button>
+    <div class="faq">
+      <p>
+        Q: What is your return policy?
+        A: Return or exchange any unused or defective merchandise by mail. Returns made within 30 days of the order delivery date will be issued refund to the original form of payment.
+      </p>
+      <p>
+        Q: When will I receive my order?
+        A: Orders are typically processed within 1 business day and about 3-4 business days to ship.
+      </p>
+    </div>
+    
+    <hr>
+    <div class="footer">
+      <a href="faq-page.html">
+        <div class="faq-button">
+          FAQ
+        </div>
+      </a>
+
+      <a href="contact-us-page.html">
+        <div class="contact-us-button">
+          Contact Us
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

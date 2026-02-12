@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backstage Records</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="website.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="website-title">
+        <h1>Backstage Records</h1>
+      </div>
+        <!-- The overlay -->
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="01-home-page.html">Home</a>
+          <a href="02-vinyl-page.html">Vinyl</a>
+          <a href="03-cd-page.html">CD</a>
+          <a href="04-merch-page.html">Merch</a>
+          <a href="faq-page.html">FAQ</a>
+          <a href="contact-us-page.html">Contact Us</a>
+        </div>
+
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span class="hamburger" onclick="openNav()"><img class="hamburger-icon" src="icons/hamburger.png"></span>
+
+      <div id="myCart" class="overlay2">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+
+      </div>
+      
+      <div class="cart" onclick="openCart()">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+        <span class="cart-quantity">0</span>
+      </div>
+    </div>
+    <hr>
+    <h1>checkout page</h1>
+    
+    <hr>
+    <div class="footer">
+      <a href="faq-page.html">
+        <div class="faq-button">
+          FAQ
+        </div>
+      </a>
+
+      <a href="contact-us-page.html">
+        <div class="contact-us-button">
+          Contact Us
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

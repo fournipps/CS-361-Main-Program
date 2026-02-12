@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backstage Records</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/vinyl.css">
+    <script src="website.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="website-title">
+        <h1>Backstage Records</h1>
+      </div>
+        <!-- The overlay -->
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="01-home-page.html">Home</a>
+          <a href="02-vinyl-page.html">Vinyl</a>
+          <a href="03-cd-page.html">CD</a>
+          <a href="04-merch-page.html">Merch</a>
+          <a href="faq-page.html">FAQ</a>
+          <a href="contact-us-page.html">Contact Us</a>
+        </div>
+
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span class="hamburger" onclick="openNav()"><img class="hamburger-icon" src="icons/hamburger.png"></span>
+
+      <div id="myCart" class="overlay2">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+
+      </div>
+      
+      <div class="cart" onclick="openCart()">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+        <span class="cart-quantity">0</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pop-genre">
+      <p class="pop">POP</p>
+    </div>
+    <div class="rnb-genre">
+      <p>R&B</p>
+    </div>
+    <select class="genres" id="genre-select">
+      <option value="">Genre</option>
+      <option value="pop">Pop</option>
+      <option value="rnb">R&B</option>
+      <option value="hiphop">Hip Hop</option>
+      <option value="country">Country</option>
+    </select>
+    <select class="sort" id="sort-select">
+      <option value="">Sort</option>
+      <option value="new">New</option>
+      <option value="bestsellers">Best Sellers</option>
+      <option value="lowtohigh">Low to High</option>
+      <option value="hightolow">High to Low</option>
+    </select>
+    <button class="back-button" onclick="goBack()">Go to previos page</button>
+    <div class="rectangle"></div>
+    <div class="rectangle2"></div>
+    <div class="rectangle3"></div>
+    <div class="rectangle4"></div>
+    <div class="albums-grid">
+      <div class="first-group">
+        <div class="gaga-div">
+          <a href="mayhem-product-page.html"><img class="album" src="pop-album-covers/mayhem-cover.png"></a>
+        </div>
+        <div class="nina-div">
+          <img class="album" src="pop-album-covers/ILMC-cover.png">
+        </div>
+        <div class="oklou-div">  
+          <img class="album" src="pop-album-covers/oklou-cover.jpg">
+        </div>
+        <div class="pp-div">
+          <img class="album" src="pop-album-covers/pp-cover.png">
+        </div>
+      </div>
+      
+      <div class="second-group">
+        <div class="addison-div">
+          <img class="album" src="pop-album-covers/addison-cover.png">
+        </div>
+        <div class="brat-div">
+          <img class="album" src="pop-album-covers/brat-cover.png">
+        </div>
+        <div class="es-div">  
+          <img class="album" src="pop-album-covers/es-cover.png">
+        </div>
+        <div class="lux-div">
+          <img class="album" src="pop-album-covers/lux-cover.png">
+        </div>
+      </div>
+
+      <div class="third-group">
+        <div class="chappell-div">
+          <img class="album" src="pop-album-covers/chappell-cover.png">
+        </div>
+        <div class="hmhas-div">
+          <img class="album" src="pop-album-covers/hmhas-cover.png">
+        </div>
+        <div class="renaissance-div">  
+          <img class="album" src="pop-album-covers/renaissance-cover.png">
+        </div>
+        <div class="dtmf-div">
+          <img class="album" src="pop-album-covers/dtmf-cover.png">
+        </div>
+      </div>
+        
+      <div class="fourth-group">
+        <div class="aaliyah-div">
+          <img class="album" src="rnb-album-covers/aaliyah-cover.png">
+        </div>
+        <div class="akon-div">
+          <img class="album" src="rnb-album-covers/akon-cover.png">
+        </div>
+        <div class="brandy-div">  
+          <img class="album" src="rnb-album-covers/brandy-cover.jpg">
+        </div>
+        <div class="frank-div">
+          <img class="album" src="rnb-album-covers/frank-cover.jpg">
+        </div>
+      </div>
+      
+      <div class="fifth-group">
+        <div class="mariah-div">
+          <img class="album" src="rnb-album-covers/mariah-cover.png">
+        </div>
+        <div class="mjb-div">
+          <img class="album" src="rnb-album-covers/mjb-cover.png">
+        </div>
+        <div class="solange-div">  
+          <img class="album" src="rnb-album-covers/solange-cover.png">
+        </div>
+        <div class="summer-div">
+          <img class="album" src="rnb-album-covers/summer-cover.png">
+        </div>
+      </div>
+
+      <div class="sixth-group">
+        <div class="sza-div">
+          <img class="album" src="rnb-album-covers/sza-cover.png">
+        </div>
+        <div class="tlc-div">
+          <img class="album" src="rnb-album-covers/tlc-cover.png">
+        </div>
+        <div class="trip-div">  
+          <img class="album" src="rnb-album-covers/trip-cover.png">
+        </div>
+        <div class="weeknd-div">
+          <img class="album" src="rnb-album-covers/weeknd-cover.png">
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    <div class="footer">
+      <a href="faq-page.html">
+        <div class="faq-button">
+          FAQ
+        </div>
+      </a>
+
+      <a href="contact-us-page.html">
+        <div class="contact-us-button">
+          Contact Us
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
