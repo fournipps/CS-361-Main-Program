@@ -1,0 +1,78 @@
+.grid {
+  position: relative;
+  top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gaga-product,.ari-product,.brat-product,.taylor-product {
+  position: absolute;
+  width: 400px;
+  top: 300px;
+}
+
+.gaga-hanger,.ari-hanger,.brat-hanger,.taylor-hanger {
+  object-position: top;
+  width: 300px;
+  position: absolute;
+}
+
+.gaga-shirt,.ari-shirt,.brat-hoodie,.taylor-hoodie {
+  width: 400px;
+  object-position: bottom;
+  position: absolute;
+}
+
+.gaga-hanger {
+  left: 50px;
+}
+
+.gaga-shirt {
+  top: -35px;
+}
+
+.ari-hanger {
+  left: 450px;
+}
+
+.ari-shirt {
+  top: -35px;
+  left: 400px;
+}
+
+.brat-hanger {
+  left: 900px;
+}
+
+.brat-hoodie {
+  left: 850px;
+  top: -10px;
+}
+
+.taylor-hanger {
+  left: 1300px;
+}
+
+.taylor-hoodie {
+  width: 300px;
+  left: 1300px;
+  top: 40px;
+}
+
+.pop-genre {
+  position: absolute;
+  left: 44%;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.pop {
+  margin-top: 40px;
+}
