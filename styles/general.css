@@ -88,3 +88,11 @@ body {
   top: 225px;
   cursor: pointer;
 }
+
+.home-message {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
