@@ -1,0 +1,136 @@
+.cd-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 175px;
+  height: 1000px;
+}
+
+.pop-cds,.rnb-cds {
+  height: 600px;
+  position: relative;
+  display: flex;
+}
+
+.addison-cd,.brat-cd,.chappell-cd,.dtmf-cd,.es-cd,.hmhas-cd,.ILMC-cd,.lux-cd,.aaliyah-cd,.akon-cd,.brandy-cd,.frank-cd,.mariah-cd,.mjb-cd,.solange-cd,.sza-cd {
+  /* Establishes the 3D viewing context */
+  perspective: 800px; 
+  width: 250px; /* Adjust as needed */
+  display: inline-block;
+  position: absolute;
+}
+
+.album {
+  /* Smooth transition for the transform effect */
+  border-style: inset;
+  border-color: gray;
+  box-shadow: -3px -3px 5px dimgray;
+  position: relative;
+  rotate: 0 1 0 50deg;
+  width: 250px;
+  top: 0;
+  z-index: 0;
+  transition: top 0.5s, z-index 0.5s, transform 0.4s ease-in-out;
+}
+
+.album:hover {
+  /* Rotates the image in 3D space on hover */  
+  z-index: 1;
+  transform: rotateX(0deg) rotateY(-50deg) translateZ(100px);
+  top: 60px;
+  cursor: pointer;
+} 
+
+.addison-cd,.aaliyah-cd {
+  left: 25px;
+}
+
+.brat-cd,.akon-cd {
+  left: 225px;
+}
+
+.chappell-cd,.brandy-cd {
+  left: 425px;
+}
+
+.dtmf-cd,.frank-cd {
+  left: 625px;
+}
+
+.es-cd,.mariah-cd {
+  left: 825px;
+}
+
+.hmhas-cd,.mjb-cd {
+  left: 1025px;
+}
+
+.ILMC-cd,.solange-cd {
+  left: 1225px;
+}
+
+.lux-cd,.sza-cd {
+  left: 1425px;
+}
+
+.rectangle,.rectangle4 {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background-color: black;
+}
+
+.rectangle2,.rectangle3,.rectangle5,.rectangle6 {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  border-style: solid;
+  border-color: black;
+}
+
+.rectangle {
+  top: 345px;
+}
+
+.rectangle2 {
+  top: 305px;
+  background-color: saddlebrown;
+}
+
+.rectangle3 {
+  top: 585px;
+  background-color: rgb(77, 38, 10);
+}
+
+.rectangle4 {
+  top: 940px;
+}
+
+.rectangle5 {
+  top: 900px;
+  background-color: saddlebrown;
+}
+
+.rectangle6 {
+  top: 1180px;
+  background-color: rgb(77, 38, 10);
+}
+
+.pop-genre {
+  position: absolute;
+  left: 47%;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.pop {
+  margin-top: 40px;
+}
+
+.rnb-genre{
+  position: absolute;
+  left: 47%;
+  top: 700px;
+  font-size: 50px;
+  font-weight: 700;
+}
