@@ -1,0 +1,103 @@
+.cartTab {
+  background-color: rgba(245, 245, 220, 0.8);
+  width: 400px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px 70px;
+}
+
+.cartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.cartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button {
+  background-color: skyblue;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cartTab .btn button.close {
+  background-color: white;
+}
+
+.cartTab .listCart {
+  overflow: auto;
+}
+
+.cartTab .listCart::-webkit-scrollbar {
+  width: 0;
+}
+
+.cartTab {
+  right: -400px;
+  transition: 0.5s;
+}
+
+body.activeTabCart .cartTab {
+  right: 0;
+}
+
+.listCart .item img {
+  width: 100%;
+}
+
+.listCart .item {
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.listCart .item .name, .totalPrice, .quantity {
+  font-weight: bold;
+}
+
+.listCart .item .quantity {
+  display: flex;
+}
+
+.listCart .item .quantity button {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.listCart .item .quantity span {
+  background-color: transparent;
+  padding: 5px;
+}
+
+.listCart .item:nth-child(even) {
+  background-color: rgba(218, 218, 218, 0.5);
+}
+
+.cartTotalBox {
+  display: grid;
+  grid-template-columns: 100px 70px;
+  justify-content: center;
+  height: 30px;
+  font-size: large;
+}
+
+.cartTotalBox span {
+  font-weight: bold;
+}

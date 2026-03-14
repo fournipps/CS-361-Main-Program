@@ -1,136 +1,97 @@
-.cd-grid {
-  position: relative;
+.container {
+  width: 1100px;
+  max-width: 90vw;
+  margin: auto;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.contentTab .item img {
+  width: 175px;
+  filter: drop-shadow(
+    0 20px 20px #0009
+  );
+}
+
+.contentTab {
   display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 175px;
-  height: 1000px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
-.pop-cds,.rnb-cds {
-  height: 600px;
-  position: relative;
-  display: flex;
+.contentTab .item {
+  background-color: rgba(230, 230, 230, 0.6);
+  padding-bottom: 20px;
+  border-radius: 20px;
 }
 
-.addison-cd,.brat-cd,.chappell-cd,.dtmf-cd,.es-cd,.hmhas-cd,.ILMC-cd,.lux-cd,.aaliyah-cd,.akon-cd,.brandy-cd,.frank-cd,.mariah-cd,.mjb-cd,.solange-cd,.sza-cd {
-  /* Establishes the 3D viewing context */
-  perspective: 800px; 
-  width: 250px; /* Adjust as needed */
-  display: inline-block;
-  position: absolute;
+.contentTab .item h2 {
+  font-size: xx-large;
 }
 
-.album {
-  /* Smooth transition for the transform effect */
-  border-style: inset;
-  border-color: gray;
-  box-shadow: -3px -3px 5px dimgray;
-  position: relative;
-  rotate: 0 1 0 50deg;
-  width: 250px;
-  top: 0;
-  z-index: 0;
-  transition: top 0.5s, z-index 0.5s, transform 0.4s ease-in-out;
+.contentTab .item .price {
+  letter-spacing: 5px;
+  font-size: large;
+  font-weight: bold;
 }
 
-.album:hover {
-  /* Rotates the image in 3D space on hover */  
-  z-index: 1;
-  transform: rotateX(0deg) rotateY(-50deg) translateZ(100px);
-  top: 60px;
+.contentTab .item button {
+  background-color: skyblue;
+  border-style: solid;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 20px;
   cursor: pointer;
-} 
-
-.addison-cd,.aaliyah-cd {
-  left: 25px;
 }
 
-.brat-cd,.akon-cd {
-  left: 225px;
+.contentTab .item .addCart {
+  font-weight: bold;
 }
 
-.chappell-cd,.brandy-cd {
-  left: 425px;
-}
-
-.dtmf-cd,.frank-cd {
-  left: 625px;
-}
-
-.es-cd,.mariah-cd {
-  left: 825px;
-}
-
-.hmhas-cd,.mjb-cd {
-  left: 1025px;
-}
-
-.ILMC-cd,.solange-cd {
-  left: 1225px;
-}
-
-.lux-cd,.sza-cd {
-  left: 1425px;
-}
-
-.rectangle,.rectangle4 {
-  position: absolute;
-  width: 100%;
-  height: 250px;
-  background-color: black;
-}
-
-.rectangle2,.rectangle3,.rectangle5,.rectangle6 {
-  position: absolute;
-  width: 100%;
-  height: 40px;
+.filterBtn, .showAllBtn, .genreSelect {
+  background-color: skyblue;
+  font-size: large;
   border-style: solid;
   border-color: black;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.rectangle {
-  top: 345px;
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.rectangle2 {
-  top: 305px;
-  background-color: saddlebrown;
+.sortBtn, .resetBtn, .sortSelect {
+  background-color: black;
+  color: white;
+  font-size: large;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.rectangle3 {
-  top: 585px;
-  background-color: rgb(77, 38, 10);
+input {
+  width: 350px;
+  height: 50px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  margin: 20px;
+  background-color: skyblue;
+  font-size: large;
 }
 
-.rectangle4 {
-  top: 940px;
-}
-
-.rectangle5 {
-  top: 900px;
-  background-color: saddlebrown;
-}
-
-.rectangle6 {
-  top: 1180px;
-  background-color: rgb(77, 38, 10);
-}
-
-.pop-genre {
-  position: absolute;
-  left: 47%;
-  font-size: 50px;
-  font-weight: 700;
-}
-
-.pop {
-  margin-top: 40px;
-}
-
-.rnb-genre{
-  position: absolute;
-  left: 47%;
-  top: 700px;
-  font-size: 50px;
-  font-weight: 700;
+.searchBtn {
+  height: 50px;
+  width: 100px;
+  font-size: large;
+  background-color: skyblue;
+  border-style: solid;
+  border-radius: 20px;
+  font-weight: bold;
 }

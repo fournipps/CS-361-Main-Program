@@ -4,7 +4,7 @@ body {
   font-family: Arial;
 }  
 
-.buttons {
+.home-buttons {
   justify-content: center;
   display: grid;
 }
@@ -61,31 +61,6 @@ body {
 
 .merch-button-style:hover {
   background-color: limegreen;
-  cursor: pointer;
-}
-
-.genres,
-.sort,
-.back-button {
-  font-family: Arial;
-  font-size: large;
-  font-weight: 700;
-  position: absolute;
-  height: 50px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2px;
-  background-color: transparent;
-  color: black;
-}
-
-.sort{
-  left: 120px;
-}
-
-.back-button {
-  top: 225px;
   cursor: pointer;
 }
 

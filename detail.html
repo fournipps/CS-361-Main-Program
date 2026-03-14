@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/cart.css">
-    <link rel="stylesheet" href="styles/cd.css">
-    <script src="scripts/website+cd.js" type="module"></script>
+    <link rel="stylesheet" href="styles/detail.css">
+    <script src="scripts/website+vinyl.js" type="module"></script>
+    <script src="scripts/detail.js" type="module"></script>
   </head>
   <body>
     <div class="container">
@@ -34,9 +35,10 @@
 
         </div>
 
-        <!-- Button to open the overlay navigation -->
+        <!-- Use any element to open/show the overlay navigation menu -->
         <span class="hamburger" onclick="openNav()"><img class="hamburger-icon" src="icons/hamburger.png"></span>
-        
+
+
         <div class="icon-cart">
           <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
@@ -44,45 +46,40 @@
           <span class="cart-quantity">0</span>
         </div>
       </div>
-      <h1 class="page-title">
-        CD
-      </h1>
-
-      <div class="buttons">
-        <select id="genreSelect" class="genreSelect">
-          <option value="">Select a genre</option>
-          <option value="pop">Pop</option>
-          <option value="rnb">R&B</option>
-        </select>
-
-        <button id="filterBtn" class="filterBtn">Filter Albums</button>
-        <button id="showAllBtn" class="showAllBtn">Show All</button>
-
-        <select id="sortSelect" class="sortSelect">
-          <option value="">Sort by...</option>
-          <option value="lowToHigh">Price: Low to High</option>
-          <option value="highToLow">Price: High to Low</option>
-          <option value="nameSort">Album name</option>
-          <option value="artistSort">Artist</option>
-        </select>
-
-        <button id="sortBtn" class="sortBtn">Sort Albums</button>
-        <button id="resetBtn" class="resetBtn">Reset</button>
+    </div>
+    
+    <div class="title">
+      <h1>PRODUCT DETAIL</h1>
+    </div>
+    <div class="detail">
+      <div class="image">
+        <img src="" alt="">
       </div>
-
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Search by album or artist"
-      />
-      <button id="searchBtn" class="searchBtn">Search</button>
-
-      <div class="contentTab">
-        Content in template file
+      <div class="content">
+        <div class="name">NAME</div>
+        <div class="price">$00</div>
+        <div class="buttons">
+          <button class="checkOut">Check Out</button>
+          <button class="addCart">
+            Add to Cart
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <h3>Tracklist</h3>
+        </div>
+        <div class="tracklist">
+          lorem1111
+        </div>
       </div>
       
     </div>
-    
+
+    <div class="title"><h2>Similar Products</h2></div>
+    <div class="listProduct"></div>
+
     <div class="cartTab">
       <h1>Shopping Cart</h1>
       <div class="listCart">
@@ -102,7 +99,7 @@
       </div>
     </div>
     <hr>
-    
+
     <div class="footer">
       <a href="faq-page.html">
         <div class="faq-button">

@@ -1,0 +1,123 @@
+.title {
+  text-align: center;
+  margin: 25px;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  text-align: left;
+}
+
+.detail .image img {
+  width: 75%;
+  padding-left: 150px;
+}
+
+.detail .image {
+  position: relative;
+}
+
+.detail .image::before {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  content: '';
+  background-color: gray;
+  z-index: -1;
+  border-radius: 20px;
+  left: calc(50% - 150px);
+  top: 50px;
+}
+
+.detail .name {
+  font-size: xx-large;
+  padding: 40px 0 0 0;
+  margin: 0 0 10px 0;
+}
+
+.detail .price {
+  font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.detail .buttons button {
+  background-color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.detail svg {
+  width: 15px;
+}
+
+.detail .buttons button:nth-child(2) {
+  background-color: black;
+  color: white;
+  display: inline-flex;
+  gap: 20px;
+  box-shadow: 0 10px 20px black;
+}
+
+.detail .buttons svg {
+  width: 20px;
+}
+
+.detail .description {
+  font-weight: bold;
+}
+
+.tracklist {
+  font-weight: bold;
+}
+
+.listProduct .item img {
+  width: 175px;
+  filter: drop-shadow(
+    0 20px 20px #0009
+  );
+}
+
+.listProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  width: 1100px;
+  margin: auto;
+}
+
+.listProduct .item {
+  background-color: rgba(230, 230, 230, 0.6);
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+.listProduct .item h2 {
+  font-size: xx-large;
+}
+
+.listProduct .item .price {
+  letter-spacing: 5px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.listProduct .item button {
+  background-color: greenyellow;
+  border-style: solid;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.listProduct .item .addCart {
+  font-weight: bold;
+}
